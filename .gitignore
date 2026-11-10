@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------
+# PRIVACY: never commit personal photos or face data
+# ---------------------------------------------------------------
+# Enrollment photos (one folder per person). Only the README is tracked.
+known_faces/*
+!known_faces/README.md
+
+# Face embeddings database (biometric data derived from your photos)
+*.npz
+
+# Safety net: ignore images anywhere in the repo, except docs/assets
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.webp
+*.gif
+*.heic
+*.heif
+*.tif
+*.tiff
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.gif
+
+# Model weights are downloaded automatically on first run
+models/
+*.onnx
+*.pt
+*.pth
+
+# Old / unrelated experiments
+_archive/
+
+# ---------------------------------------------------------------
+# Python / tooling
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+*.part

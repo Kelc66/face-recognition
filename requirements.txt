@@ -1,0 +1,13 @@
+# Core + desktop app
+opencv-contrib-python>=4.8   # opencv-python>=4.8 also works (YuNet/SFace are in the main module)
+numpy
+PySide6>=6.5
+cv2-enumerate-cameras    # optional: shows camera names in the app's camera list
+
+# Test notebook
+matplotlib
+jupyter
+ipykernel
+
+# Tests
+pytest
